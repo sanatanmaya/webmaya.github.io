@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        body{
+            font-size:20px;
+            background-color:aliceblue;
+        }
+        .formelement{
+            color:green;
+        }
+        .submitbutton{
+            text-align:center;
+            font-size:19px;
+            border:3px solid black;
+            border-radius:9px;
+            box-shadow:7px 5px 3px cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1><mark>contact form</mark></h1>
+    <br>
+    <br>
+    <form action="https://formspree.io/f/xpzgplkg" method="POST">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <label for = "yourname" class = "formelement">1.Enter your name:</label>
+            <input type = "text" id = "yourname" class = "formelement" autocomplete = "off" name = "yourname" placeholder = "Your Name" required>
+            <br>
+            <br>
+            <label for = "emailid" class = "formelement">2.Enter your email id:</label>
+            <input type = "email" class = "formelement" placeholder = "Email Id" id = "emailid" name = "emailid" required autocomplete = "off" ></input>
+            <br>
+            <br>
+            <label for = "number" class = "formelement">3.Enter your phone number:</label>
+            <input type = "number" class = "formelement" placeholder = "Your Number" id = "number" required name = "number" autocomplete = "off">
+            <br>
+            <br>
+            <label for = "sservices" class = "formelement">4.Select our service:</label>
+            <select id = "services" name = "services">
+                <option value = "Static Website">Static Website</option>
+                <option value = "Dynamic Website">Dynamic Website</option>
+                <option value = "Blogging Website">Blogging Website</option>
+                <option value = "E-commerce Website">E-commerce Website</option>
+                <option value = "Software">Software</option>
+            </select>
+            <br>
+            <br>
+            <label for = "massage" class = "formelement">5.Describe your requirement:</label>
+            <textarea id = "massage" class = "formelement" required autocomplete = "off" placeholder = "Your Requirement" name = "message" rows = "10"></textarea>
+            <br>
+            <br>
+            <input type = "submit" value = "Submit Form" class = "submitbutton">
+            <br>
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
